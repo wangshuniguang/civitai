@@ -22,7 +22,7 @@ const disallow = exclude.filter((path) => !path.includes('sitemap.xml'));
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXTAUTH_URL || 'http://localhost:3000',
+  siteUrl: process.env.NEXTAUTH_URL || 'http://0.0.0.0:3000',
   generateRobotsTxt: true,
   sitemapSize: 5000,
   changefreq: null,
